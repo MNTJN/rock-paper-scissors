@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Ubuntu Mono', monospace, Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #F78812;
+    color: #E02401;
+}
+
+main{
+    padding: 50px;
+}
+
+button{
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid #F78812;
+    border-radius: 15px;
+    background-color: #E02401;
+    color: #F78812;
+    margin: 25px auto;
+    padding: 6px 15px;
+    cursor: pointer;
+    display: block;
+}
+
+button:hover{
+    background-color: #51050F
+}
+
+h1, h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 50px;
+    margin: 20 auto;
+    color: #51050F;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.rules-container{
+    margin: 50px;
+    text-align: center;
+}
+
+.rules{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.icons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.game-container{
+    margin: 50px;
+}
+
+.icon{
+    cursor: pointer;
+}
+
+.fas{
+    font-size: 140px;
+    color: #E02401;
+}
+
+.fas:hover{
+    color: #51050F;
+
+}
+
+.active-game-container, .replay-button{
+    display: none;
+}
+
+.rules{
+    display: block;
+}
+
+.score-display{
+    width: 70%;
+    font-size: 20px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.result-display{
+    width: 50%;
+    margin: 30px auto;
+    font-size: 50px;
+    color: #51050F;
+    text-align: center;
+}
