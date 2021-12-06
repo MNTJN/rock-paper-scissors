@@ -31,7 +31,7 @@ button:hover{
     background-color: #51050F
 }
 
-h1, h2{
+h1, h2, h3{
     text-align: center;
     text-transform: uppercase;
 }
@@ -44,6 +44,10 @@ h1{
 
 h2{
     font-size: 30px;
+}
+
+h3{
+    font-size: 19px;
 }
 
 .rules-container{
@@ -77,6 +81,19 @@ h2{
     color: #E02401;
 }
 
+.move{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.moves .fas{
+    font-size: 50px;
+}
+
 .fas:hover{
     color: #51050F;
 
@@ -88,6 +105,31 @@ h2{
 
 .rules{
     display: block;
+}
+
+.moves{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative
+}
+
+.move{
+    margin-top: 50px;
+    width: 140px;
+    height: 140px;
+    border: 2px solid #51050F;
+    border-radius: 15px;
+}
+
+.round-counter{
+    position: absolute;
+    width: 100px;
+    top: 0%;
+    margin: 10px auto;
+    font-weight: 600;
+
 }
 
 .score-display{
