@@ -19,6 +19,8 @@ moves[1] beats moves[0]
 moves[2] beats moves[1] */ 
 const moves = ["ROCK","PAPER","SCISSORS"];
 const playerMovesIcons = ["fa-hand-rock", "fa-hand-paper", "fa-hand-scissors"];
+
+/* Variables for storing the last played move of each player */
 let computerSelection = '';
 let playerSelection = '';
 
@@ -26,6 +28,7 @@ let playerSelection = '';
 let computerScore = 0;
 let playerScore = 0;
 
+/* Round counter */
 let roundCount = 0;
 
 /* This function starts the game by reinitializing the scores to 0 and the display of all the elements */
@@ -43,10 +46,9 @@ let startGame = () => {
     resultDisplay.style.display = "none";
     replayButton.style.display = "none";
     removeMovesIcons();
-
 };
 
-/* Displays the current score */
+/* Returns formatted current score */
 let getScore = () => {
     return `### SCORE ### You : ${playerScore} | Computer : ${computerScore}`;
 };
@@ -73,6 +75,7 @@ let computerPlay = () => {
     return computerSelection;
 };
 
+/* Removes the icon of the previous move */
 let removeMovesIcons = () => {
     playerIcon.classList.remove(playerMovesIcons[0], playerMovesIcons[1], playerMovesIcons[2]);
     computerIcon.classList.remove(playerMovesIcons[0], playerMovesIcons[1], playerMovesIcons[2]);
@@ -87,6 +90,7 @@ let displayRound = () => {
     roundCounter.textContent = `Current round : ${roundCount}`;
 };
 
+/* Displays the current move of each player */
 let showMoves = () => {
     removeMovesIcons();
     for(let i = 0 ; i < moves.length ; i++){
