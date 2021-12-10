@@ -150,7 +150,14 @@ section{
 .game-history-container{
     height: 150px;
     overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
+.game-history-container::-webkit-scrollbar{
+    display: none;
+}
+
 .game-history-icons-display p i{
     margin-left: 10px;
 }
